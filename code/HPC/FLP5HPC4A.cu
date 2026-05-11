@@ -6,7 +6,7 @@ __global__ void vectorAdd(float *A, float *B, float *C, int n) {
         C[i] = A[i] + B[i];
     }
 }
-
+ 
 int main() {
     int n = 1000000;  // large vector
     size_t size = n * sizeof(float);
@@ -50,3 +50,4 @@ int main() {
 
     return 0;
 }
+ 
